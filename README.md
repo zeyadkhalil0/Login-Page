@@ -19,7 +19,5 @@ A simple and responsive login page built with **HTML** and **CSS**. This project
 - **HTML5**
 - **CSS3**
 
----
-
-## File Structure
+- ---
 
