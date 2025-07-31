@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Comic+Relief:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* Global Rules */
 * {
     margin: 0;
@@ -17,18 +18,21 @@ html {
     max-width: 1200px;
     padding: 0 100px;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(52, 99, 226);
     font-weight: bold;
     transition: 0.4s;
 }
-a:hover{
+
+a:hover {
     background-color: rgba(23, 218, 98, 0.637);
     padding: 8px;
     border-radius: 10px;
     color: rgb(29, 19, 19);
 }
+
 /* End Global Rules */
 header {
     background-image: url(/image/bg.jpg);
@@ -43,7 +47,6 @@ header .container {
 }
 
 header form {
-    position: relative;
     height: calc(100% - 160px);
     width: calc(100% / 2);
     display: flex;
@@ -58,12 +61,35 @@ header form {
 
 }
 
-header form h1{
+header form h1 {
     position: absolute;
     top: 30px;
-} 
+}
 
-header form input{
+header form .user {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header form .pass {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header form .user>i,
+.pass>i {
+    position: absolute;
+    right: 35px;
+    color: white;
+
+}
+
+header form input {
     background-color: #ffffff10;
     border: none;
     padding: 15px;
@@ -71,26 +97,14 @@ header form input{
     margin: 10px 0;
     border-radius: 20px;
     width: calc(100% - 40px);
-} 
-header form ::placeholder{
+}
+
+header form ::placeholder {
     color: white;
     text-transform: uppercase;
-} 
-header form .fa-lock,.fa-user{
-    position: absolute;
-    color: white;
-    right: 40px;
-    
-} 
-
-header form .fa-lock{
-bottom: 51%;
-}
-header form .fa-user{
-bottom: 66%;
 }
 
-header form .button{
+header form .button {
     width: calc(100% - 40px);
     border-radius: 20px;
     border: none;
@@ -103,13 +117,13 @@ header form .button{
     font-weight: bold;
 }
 
-header p{
+header p {
     padding-top: 20px;
 }
 
-header .Creat{
-    text-align: center;
-    margin: auto;
-    color: #eee;
-    background-color: aqua;
+
+/* Register Styling */
+
+header .register-form h1{
+margin: -16px 0 0 0;
 }
